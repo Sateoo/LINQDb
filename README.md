@@ -5,18 +5,24 @@
 ##
 ### Creazione passo passo
 1. Creare una cartella
+
 2. Aprirla su Visual Studio Code
+
 3. Aprire un terminale e scrivere
   ```
   dotnet new console
   ```
+
 4. Spostare all'interno della cartella creata il file [chinook.db](https://github.com/Sateoo/LINQDb/blob/main/README.md#prerequisiti)
+
 5. Installare l'estensione SQLite
   ![estendione](https://kod90.com/wp-content/uploads/2022/09/sqlite-eklentisi-1024x487.png)
+
 6. Aprire il terminale e scrivere
   ```
   dotnet add package sqlite-net-pcl
   ```
+
 7. Andare nel file Program.cs e scrivere
   ```
   using SQLite;
