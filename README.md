@@ -10,7 +10,7 @@
   ```
   dotnet new console
   ```
-4. Spostare all'interno della cartella creata il file chinook.db
+4. Spostare all'interno della cartella creata il file [chinook.db](https://github.com/Sateoo/LINQDb/blob/main/README.md#prerequisiti)
 5. Installare l'estensione SQLite
   ![estendione](https://kod90.com/wp-content/uploads/2022/09/sqlite-eklentisi-1024x487.png)
 6. Aprire il terminale e scrivere
