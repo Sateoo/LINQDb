@@ -10,20 +10,20 @@ Console.WriteLine($"In questa tabella ci sono{tblArtist.Count} record!");
 //stampa della tabella dal primo record all'ultimo
 foreach(var artista in tblArtist)
 {
-    Console.WriteLine($"{artista.Name}");
+  Console.WriteLine($"{artista.Name}");
 }
 
 //stampa della tabella dall'ultimo record al primo
 tblArtist = tblArtist.OrderByDescending(x=>x.Name).ToList();
 foreach(var artista in tblArtist)
 {
-    Console.WriteLine($"{artista.Name}");
+  Console.WriteLine($"{artista.Name}");
 }
 
 
 
 public class Artist
 {
-    public int ArtistId{get;set;}
-    public string Name{get;set;}
+  public int ArtistId{get;set;}
+  public string Name{get;set;}
 }
