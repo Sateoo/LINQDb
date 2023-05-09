@@ -8,15 +8,19 @@ Console.WriteLine($"In questa tabella ci sono{tblArtist.Count} record!");
 //Language Integrate Query
 
 //stampa della tabella dal primo record all'ultimo
+Console.WriteLine("Ordine default");
 foreach(var artista in tblArtist)
 {
+  Console.Write($"{artista.ArtistId} ");
   Console.WriteLine($"{artista.Name}");
 }
 
 //stampa della tabella dall'ultimo record al primo
-tblArtist = tblArtist.OrderByDescending(x=>x.Name).ToList();
+Console.WriteLine("Ordine contrario");
+tblArtist = tblArtist.OrderByDescending(x=>x.ArtistId).ToList();
 foreach(var artista in tblArtist)
 {
+  Console.Write($"{artista.ArtistId} ");
   Console.WriteLine($"{artista.Name}");
 }
 
