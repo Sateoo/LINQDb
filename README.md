@@ -57,4 +57,7 @@
   ```
 ##
 ### Cos'è LINQ (Language Integrated Query)
-è una tecnologia di programmazione sviluppata da Microsoft per semplificare la manipolazione dei dati all'interno del codice.
+è una tecnologia di programmazione sviluppata da Microsoft per semplificare la manipolazione dei dati all'interno del codice. LINQ è stato introdotto per la prima volta in .NET Framework 3.5 e fornisce un insieme di librerie standardizzate che possono essere utilizzate in qualsiasi linguaggio supportato da .NET.
+### Consente
+* di scrivere query SQL-style (Structured Query Language) all'interno del proprio codice, che possono essere eseguite su una vasta gamma di dati, inclusi database, oggetti e servizi Web.
+* di scrivere query complesse in modo più semplice e leggibile rispetto all'utilizzo di costrutti di loop tradizionali, aumentando così la produttività del programmatore e riducendo la possibilità di errori.
