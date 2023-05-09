@@ -10,4 +10,4 @@
   dotnet new console
   ```
 4.installare l'estensione SQLite
-* ![estendione]("https://kod90.com/wp-content/uploads/2022/09/sqlite-eklentisi-1024x487.png")
+* ![estendione](https://kod90.com/wp-content/uploads/2022/09/sqlite-eklentisi-1024x487.png)
