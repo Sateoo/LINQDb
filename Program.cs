@@ -24,12 +24,6 @@ foreach(var artista in tblArtist)
 
 public class Artist
 {
-<<<<<<< HEAD
   public int ArtistId{get;set;}
   public string Name{get;set;}
 }
-=======
-    public int ArtistId{get;set;}
-    public string Name{get;set;}
-}
->>>>>>> 848f565c1c706ceae8943d1230f50507079d160d
