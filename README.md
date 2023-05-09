@@ -10,44 +10,45 @@
   ```
   dotnet new console
   ```
-4. Installare l'estensione SQLite
+4. Spostare all'interno della cartella creata il file chinook.db
+5. Installare l'estensione SQLite
   ![estendione](https://kod90.com/wp-content/uploads/2022/09/sqlite-eklentisi-1024x487.png)
-5. Aprire il terminale e scrivere
+6. Aprire il terminale e scrivere
   ```
   dotnet add package sqlite-net-pcl
   ```
-6. Andare nel file Program.cs e scrivere
-```
-using SQLite;
+7. Andare nel file Program.cs e scrivere
+  ```
+  using SQLite;
 
-SQLiteConnection cn1= new SQLiteConnection("chinook.db");
-var tblArtist=cn1.Query<Artist>("select * from artists");
-Console.WriteLine($"In questa tabella ci sono{tblArtist.Count} record!");
+  SQLiteConnection cn1= new SQLiteConnection("chinook.db");
+  var tblArtist=cn1.Query<Artist>("select * from artists");
+  Console.WriteLine($"In questa tabella ci sono{tblArtist.Count} record!");
 
-//utilizzando  il linguaggio LINQ
-//Language Integrate Query
+  //utilizzando  il linguaggio LINQ
+  //Language Integrate Query
 
-//stampa della tabella dal primo record all'ultimo
-foreach(var artista in tblArtist)
-{
-    Console.WriteLine($"{artista.Name}");
-}
+  //stampa della tabella dal primo record all'ultimo
+  foreach(var artista in tblArtist)
+  {
+      Console.WriteLine($"{artista.Name}");
+  }
 
-//stampa della tabella dall'ultimo record al primo
-tblArtist = tblArtist.OrderByDescending(x=>x.Name).ToList();
-foreach(var artista in tblArtist)
-{
-    Console.WriteLine($"{artista.Name}");
-}
+  //stampa della tabella dall'ultimo record al primo
+  tblArtist = tblArtist.OrderByDescending(x=>x.Name).ToList();
+  foreach(var artista in tblArtist)
+  {
+      Console.WriteLine($"{artista.Name}");
+  }
 
 
 
-public class Artist
-{
-    public int ArtistId{get;set;}
-    public string Name{get;set;}
-}
-```
+  public class Artist
+  {
+      public int ArtistId{get;set;}
+      public string Name{get;set;}
+  }
+  ```
 ##
 ### Cos'è LINQ (Language Integrated Query)
 è una tecnologia di programmazione sviluppata da Microsoft per semplificare la manipolazione dei dati all'interno del codice.
