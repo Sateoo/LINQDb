@@ -10,4 +10,4 @@
   dotnet new console
   ```
 4.installare l'estensione SQLite
-* ![]("C:\Users\angel\OneDrive\Desktop\estensione.png")
+* ![]("Desktop\estensione.png")
