@@ -2,7 +2,7 @@
 ## Prerequisiti
 * Installare il database chinook.db -> SQLite sample database ([download](https://www.sqlitetutorial.net/wp-content/uploads/2018/03/chinook.zip))
 * Installare l'estensione SQLite su Visual Studio Code  
-#
+##
 ### Creazione passo passo
 1. Creare una cartella
 2. Aprirla su Visual Studio Code
@@ -48,3 +48,6 @@ public class Artist
     public string Name{get;set;}
 }
 ```
+##
+### Cos'è LINQ (Language Integrated Query)
+è una tecnologia di programmazione sviluppata da Microsoft per semplificare la manipolazione dei dati all'interno del codice.
